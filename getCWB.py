@@ -10,8 +10,8 @@ year = input('請輸入下載年分 (ex. 2016): ')
 Alt = input('請輸入測站高度 (ex. 324.0m): ')
 
 
-#date = pd.date_range(year+'-01-01', year+'-12-31', freq='1d')
-date = pd.date_range(year+'-01-01', year+'-11-30', freq='1d')
+date = pd.date_range(year+'-01-01', year+'-12-31', freq='1d')
+# date = pd.date_range(year+'-01-01', year+'-11-30', freq='1d')
 Date = [datetime.datetime.strftime(dd, '%Y-%m-%d') for dd in date]
 
 Data = pd.DataFrame()
